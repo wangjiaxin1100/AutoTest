@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-
-
-这是master上的内容
-这是branch1上的内容
-
-版本记录
-版本记录VERSION2
