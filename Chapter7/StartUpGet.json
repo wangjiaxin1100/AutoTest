@@ -11,5 +11,22 @@
       },
       "text": "这是一个没有参数的get请求"
     }
+  },
+  {
+    "description": "模拟有参数的get请求",
+    "request": {
+      "uri": "/getdemowithparam",
+      "method": "get",
+      "queries": {
+        "name": "wangjiaxin",
+        "sex": "man"
+      }
+    },
+    "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text": "这是一个带参数的get请求"
+    }
   }
 ]

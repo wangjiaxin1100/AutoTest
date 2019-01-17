@@ -1,0 +1,14 @@
+[
+  {
+    "description": "请求及返回值均为XML格式",
+    "request": {
+      "uri": "/xml",
+      "text": {
+        "xml": "<request><parameters><id>1</id></parameters></request>"
+      }
+    },
+    "response": {
+      "file": "data.json"
+    }
+    }
+]

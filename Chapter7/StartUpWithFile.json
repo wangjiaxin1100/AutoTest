@@ -1,0 +1,23 @@
+[
+  {
+    "description": "这是一个返回文件的get方法",
+    "request": {
+      "uri": "/file"
+    },
+    "response": {
+      "file": "data.json"
+    }
+  },
+
+  {
+    "description": "返回模版内容",
+    "request": {
+      "uri": "/template"
+    },
+    "response": {
+      "text": {
+        "template": "${req.queries['name']}"
+      }
+    }
+  }
+]
