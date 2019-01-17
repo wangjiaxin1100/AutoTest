@@ -1,2 +1,6 @@
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c Startup1.json
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c Startupget.json
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpPost.json
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpWithCookies.json
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpWithHeader.json
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpWithRedirect.json
