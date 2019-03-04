@@ -1,3 +1,4 @@
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c Startup.json
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c Startup1.json
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c Startupget.json
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpPost.json
@@ -6,3 +7,4 @@ java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpWithHeader.
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpWithRedirect.json
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpWithFile.json
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c StartUpWithXML.json
+java -jar ./moco-runner-0.11.0-standalone.jar https -p 8899 -c Startup1.json -https my.jks -cert 123456 -keystore 123456
