@@ -6,9 +6,22 @@
   },
   "response": {
     "headers":{
-      "Content-Type":"text/html;charset=gbk"
+      "Content-Type":"text/html;charset=UTF-8"
     },
     "text": "第一个Moco框架demo"
   }
-}
+},
+
+
+
+
+  {
+    "description": "演示内容",
+    "request": {
+      "uri": "/test"
+    },
+    "response": {
+      "text": "1230"
+    }
+  }
 ]

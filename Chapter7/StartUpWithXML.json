@@ -8,7 +8,18 @@
       }
     },
     "response": {
-      "file": "data.json"
+      "text": "Good"
     }
+    },
+  {
+    "description": "request必须是xml，且与your_file.xml文件内容一致，才能匹配此接口",
+    "request": {
+      "file": {
+        "xml": "your_file_xml"
+      }
+    },
+    "response": {
+      "text": "foo"
     }
+  }
 ]
