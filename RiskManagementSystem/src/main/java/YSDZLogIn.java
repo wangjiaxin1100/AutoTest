@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LogIn1 {
+public class YSDZLogIn {
     public static  void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("http://10.10.134.232:7001/login.jsp");

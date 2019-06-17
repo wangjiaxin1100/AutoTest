@@ -15,11 +15,14 @@ import java.io.IOException;
 public class MyHttpClient {
     @Test
     public void test1() throws IOException {
+        //存放结果
         String result;
         SSLSocketFactory.getSocketFactory().setHostnameVerifier(new AllowAllHostnameVerifier());
-        HttpGet  get = new HttpGet("https://www.baidu.com");
+        HttpGet  get = new HttpGet("https://news.sina.com.cn/");
+        //用来执行get方法
         HttpClient client = new DefaultHttpClient();
         HttpResponse response =client.execute(get);
+        //转换respon结果为utf-8格式
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
     }
