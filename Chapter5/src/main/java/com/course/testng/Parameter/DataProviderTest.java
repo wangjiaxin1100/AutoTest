@@ -8,17 +8,17 @@ import java.lang.reflect.Method;
 @Test(dataProvider = "data")
 public class DataProviderTest {
     public void TestDataProviderTest(String name, int age) {
-        System.out.println("name=" + name + "age" + age);
+        System.out.println("name=" + name + "; age" + age);
     }
 
     @DataProvider(name = "data")
     public Object[][] providerData() {
-        Object[][] O = new Object[][]{
+        Object[][] o = new Object[][]{
                 {"zhangsan", 10},
                 {"lisi", 20},
                 {"wangwu", 30},
         };
-        return O;
+        return o;
     }
     @Test(dataProvider = "methodData")
     public void test1(String name, int age){
@@ -31,6 +31,7 @@ public class DataProviderTest {
     }
 
     @DataProvider(name="methodData")
+//    自动将test1、test2传进
     public Object[][] methodDataTest(Method method) {
         Object[][] result = null;
         if (method.getName().equals("test1")) {

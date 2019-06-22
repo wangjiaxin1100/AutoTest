@@ -32,10 +32,10 @@ public class GroupsOnMethod {
     }
     @BeforeGroups("client")
     public void BeforeGroupOnClient(){
-        System.out.println("这是服务端组运行前的运行方法");
+        System.out.println("这是客户端组运行前的运行方法");
     }
     @AfterGroups("client")
     public void AfterGroupOnClient(){
-        System.out.println("这是服务端组运行后的运行方法");
+        System.out.println("这是客户端组运行后的运行方法");
     }
 }

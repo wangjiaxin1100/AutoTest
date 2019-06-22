@@ -4,13 +4,13 @@
     <test name="Login">
         <classes>
             <class name="com.course.testng.Suite.SuiteConfig"></class>
-            <class name="com.course.testng.Ignore"></class>
+            <class name="com.course.testng.Suite.LoginTest"></class>
         </classes>
     </test>
-    <!--<test name="Pay">-->
-        <!--<classes>-->
-            <!--<class name="com.course.testng.Suite.SuiteConfig"></class>-->
-            <!--<class name="com.course.testng.Suite.PayTest"></class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="Pay">
+    <classes>
+        <class name="com.course.testng.Suite.SuiteConfig"></class>
+        <class name="com.course.testng.Suite.PayTest"></class>
+    </classes>
+</test>
 </suite>

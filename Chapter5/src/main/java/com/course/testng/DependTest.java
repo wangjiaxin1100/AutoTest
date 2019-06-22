@@ -2,14 +2,14 @@ package com.course.testng;
 
 import org.testng.annotations.Test;
 
-public class DependText {
+public class DependTest {
     @Test
     public void Test1(){
-        System.out.println("text1执行");
+        System.out.println("test1执行");
         throw new RuntimeException();
     }
     @Test(dependsOnMethods ={"Test1"})
     public void Test2(){
-        System.out.println("text2执行");
+        System.out.println("test2执行");
     }
 }
