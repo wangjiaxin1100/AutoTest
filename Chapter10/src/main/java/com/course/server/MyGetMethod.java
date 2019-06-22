@@ -11,14 +11,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+//告知为被扫描的类
 @RestController
 @Api(value = "/",description = "这是我全部的get方法")
 public class MyGetMethod {
     @RequestMapping(value = "/getCookies",method = RequestMethod.GET)
     @ApiOperation(value = "通过这个方法可以获取到Cookies",httpMethod = "GET")
     public String getCookies(HttpServletResponse response){
-        //HttpServerletRequest
-        //HttpServerletResponse
+        //HttpServerletRequest  装请求信息的类
+        //HttpServerletResponse 装响应信息的类
         Cookie cookie = new Cookie("login","true");
         response.addCookie(cookie);
         return "恭喜你获得Cookies成功";
@@ -49,6 +50,7 @@ public class MyGetMethod {
      */
 @RequestMapping(value = "/get/with/param",method = RequestMethod.GET)
 @ApiOperation(value = "开发一个需要携带参数才能访问的get请求",httpMethod = "GET")
+//访问地址localhost:8888/get/with/param?start=10&end=20 RequestParam
     public Map<String, Integer> getList(@RequestParam Integer start,
                                         @RequestParam Integer end){
         Map<String,Integer> myList = new HashMap<>();
@@ -61,6 +63,7 @@ public class MyGetMethod {
     /**
      * 第二种需要携带参数才能访问的get请求
      * url:ip:port/get/with/param/10/20
+     * PathVariable
      */
     @RequestMapping(value = "/get/with/param/{start}/{end}")
     @ApiOperation(value = "第二种需要携带参数才能访问的get请求",httpMethod = "GET")
