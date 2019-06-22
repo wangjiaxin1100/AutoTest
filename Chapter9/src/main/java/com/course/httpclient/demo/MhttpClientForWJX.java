@@ -1,29 +1,28 @@
 package com.course.httpclient.demo;
 
-
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.conn.ssl.AllowAllHostnameVerifier;
-import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class MyHttpClient {
+public class MhttpClientForWJX {
     @Test
-    public void test1() throws IOException {
-        //瀛樻斁缁撴灉
+    public void test() throws IOException {
+        //创建result存放返回结果
         String result;
-        SSLSocketFactory.getSocketFactory().setHostnameVerifier(new AllowAllHostnameVerifier());
-        HttpGet  get = new HttpGet("https://news.sina.com.cn/");
-        //client鐢ㄦ潵鎵цget鏂规硶
+        //get方法参数url
+        HttpGet get = new HttpGet("https://www.baidu.com/");
+        //client用来执行get方法
         HttpClient client = new DefaultHttpClient();
-        HttpResponse response =client.execute(get);
-        //杞崲respon缁撴灉涓簎tf-8鏍煎紡
+        //respons接执行get方法返回内容
+        HttpResponse response = client.execute(get);
+        //转换respon结果为utf-8格式
         result = EntityUtils.toString(response.getEntity(),"utf-8");
+//        输出访问结果
         System.out.println(result);
     }
 }
