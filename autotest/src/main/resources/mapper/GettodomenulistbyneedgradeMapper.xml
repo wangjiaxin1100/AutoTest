@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab.dao.GettodomenulistbyneedgradeMapper">
+  <resultMap id="BaseResultMap" type="com.ab.model.Gettodomenulistbyneedgrade">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="token" jdbcType="VARCHAR" property="token" />
+    <result column="menuType" jdbcType="VARCHAR" property="menutype" />
+    <result column="expect" jdbcType="VARCHAR" property="expect" />
+    <result column="rid" jdbcType="VARCHAR" property="rid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="sType" jdbcType="VARCHAR" property="stype" />
+    <result column="needGrade" jdbcType="VARCHAR" property="needgrade" />
+    <result column="rTime" jdbcType="VARCHAR" property="rtime" />
+    <result column="sDate" jdbcType="VARCHAR" property="sdate" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from gettodomenulistbyneedgrade
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ab.model.Gettodomenulistbyneedgrade">
+    <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into gettodomenulistbyneedgrade (id, token, menuType, 
+      expect, rid, title, 
+      sType, needGrade, rTime, 
+      sDate, comment)
+    values (#{id,jdbcType=INTEGER}, #{token,jdbcType=VARCHAR}, #{menutype,jdbcType=VARCHAR}, 
+      #{expect,jdbcType=VARCHAR}, #{rid,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
+      #{stype,jdbcType=VARCHAR}, #{needgrade,jdbcType=VARCHAR}, #{rtime,jdbcType=VARCHAR}, 
+      #{sdate,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.ab.model.Gettodomenulistbyneedgrade">
+    update gettodomenulistbyneedgrade
+    set token = #{token,jdbcType=VARCHAR},
+      menuType = #{menutype,jdbcType=VARCHAR},
+      expect = #{expect,jdbcType=VARCHAR},
+      rid = #{rid,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      sType = #{stype,jdbcType=VARCHAR},
+      needGrade = #{needgrade,jdbcType=VARCHAR},
+      rTime = #{rtime,jdbcType=VARCHAR},
+      sDate = #{sdate,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey2" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, token, menuType, expect, rid, title, sType, needGrade, rTime, sDate, comment
+    from gettodomenulistbyneedgrade
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="Gettodomenulistbyneedgrade" resultMap="BaseResultMap">
+    select id, token, menuType, expect, rid, title, sType, needGrade, rTime, sDate, comment
+    from gettodomenulistbyneedgrade
+  </select>
+</mapper>

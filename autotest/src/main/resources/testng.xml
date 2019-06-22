@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="接口测试全集">
+    <test name="邦邦接口">
+        <classes>
+            <class name="com.ab.testcase.GetUserNameByPhone"></class>
+            <class name="com.ab.testcase.GetUserNameByPhone2"></class>
+            <class name="com.ab.testcase.GetTodoMenuListByNeedGrade"></class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.ab.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
