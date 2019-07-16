@@ -18,6 +18,7 @@ public class Application {
         Application.context = SpringApplication.run(Application.class,args);
     }
 
+//    预存储
     @PreDestroy
     public void close(){
         Application.context.close();

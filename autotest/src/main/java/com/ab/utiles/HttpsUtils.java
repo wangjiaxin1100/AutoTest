@@ -196,6 +196,7 @@ public class HttpsUtils {
 
 
     public static String get(String url) throws Exception {
+//        http get方法，属性为url，存储返回报文并返回
         String result = null;
         CloseableHttpClient httpClient = HttpsUtils.getHttpClient();
         HttpGet get1 = new HttpGet(url);

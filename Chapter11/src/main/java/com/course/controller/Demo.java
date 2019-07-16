@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 public class Demo {
 
     //首先获取一个执行sql语句的对象
-    //预加载对象
+    //预加载对象template
 
     @Autowired
     private SqlSessionTemplate template;

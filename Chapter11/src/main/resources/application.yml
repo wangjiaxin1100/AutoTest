@@ -17,5 +17,6 @@ spring:
 
 mybatis:
     type-aliases-package: com.course.model
+#    映射mapper下的配置文件
     mapper-locations:
        - mapper/*

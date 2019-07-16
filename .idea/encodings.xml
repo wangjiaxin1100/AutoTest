@@ -3,8 +3,12 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/Chapter10" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter11" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter21" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter13" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter7/StartUpPost.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter7/data.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JavaLearn/src/main/java/imooc/com/Telephone.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JavaLearn2/src/main/java/com/imooc/Telphone.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/autotest/src/main/java/com/ab/testcase/MyTest.java" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

@@ -8,6 +8,7 @@ import com.alibaba.fastjson.parser.Feature;
 import org.apache.http.entity.StringEntity;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class GetTodoMenuListByNeedGrade {
     @Test
     public void Gettodomenulistbyneedgrade() throws Exception {
         String result;
-        Map<String, String> param=new HashMap<String,String>();
+        Map<String, String> param=new HashMap<>();
         param.put("token","00a3e23bf2a74993a13d586e99950d39");
         param.put("menuType","todu");
 
@@ -27,10 +28,10 @@ public class GetTodoMenuListByNeedGrade {
 
         JSONObject res1 = JSON.parseObject(result, Feature.OrderedField);//解析时不调整顺序
         String RESULT_CODE = res1.getString("RESULT_CODE");
-        String expect = "M00000";
+//        String expect = "M00002";
         System.out.println(param.toString());
         System.out.println("实际结果+++++++"+result);
-        Assert.assertEquals(expect,RESULT_CODE);
+        Assert.assertEquals(RESULT_CODE,"M00002");
 
     }
 }

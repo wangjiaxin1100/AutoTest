@@ -17,7 +17,7 @@ public class GetUserNameByPhone2 {
 
          //调用工具类发起get请求
         String result = HttpsUtils.get(ConfigFile.getUrl("im", "getUserNameByPhone2")+getusernamebyphone.getPhone());
-
+//      数据库中获取expect
         String expect = getusernamebyphone.getExpect();
         Assert.assertEquals(expect,result);
 

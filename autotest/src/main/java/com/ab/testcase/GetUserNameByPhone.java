@@ -27,15 +27,18 @@ public class GetUserNameByPhone {
 //      调用本地工具类，绕过https校验
         CloseableHttpClient client1 = HttpsUtils.getHttpClient();
         HttpResponse response = client1.execute(get);
+//        响应报文存储在result变量中，转换成String类型
         result= EntityUtils.toString(response.getEntity());
         System.out.println("实际结果+++++++"+result);
 //        System.out.println(getphone.toString());
 
+//        转换字符串类型为JSON格式
         JSONObject res1 = JSON.parseObject(result, Feature.OrderedField);//解析时不调整顺序
+//       获取部分可比较内容进行比较
         String data = res1.getString("data");
         String expect1 = "{\"accountType\":2,\"phoneNumber\":\"+8613699282826\",\"status\":\"1\",\"username\":\"245800\"}";
         String expect = "{\"data\":{\"accountType\":2,\"phoneNumber\":\"+8613699282826\",\"status\":\"1\",\"username\":\"245800\"},\"retcde\":\"0\",\"retmsg\":\"成功\"}";
-
+//        断言，判断返回结果与预期结果是否相等
         Assert.assertEquals(data,expect1);
         Assert.assertEquals(expect,result);
     }

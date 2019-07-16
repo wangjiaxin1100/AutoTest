@@ -21,7 +21,7 @@ public class GetDataProvider {
         List<Map<String,Object>> list = new ArrayList<>();
         list = session.selectList(method.getName());
         System.out.println(method.getName());
-
+//      判断数据库中的用例条数
         if (list.size() > 1) {
             obj = new Object[list.size()][];
             for (int i = 0; i < list.size(); i++) {

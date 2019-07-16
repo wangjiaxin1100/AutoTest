@@ -20,6 +20,7 @@ public class DataProviderTest {
         };
         return o;
     }
+//    根据方法进行参数传递
     @Test(dataProvider = "methodData")
     public void test1(String name, int age){
         System.out.println("test1方法name"+name+";age="+age);
@@ -31,7 +32,7 @@ public class DataProviderTest {
     }
 
     @DataProvider(name="methodData")
-//    自动将test1、test2传进
+//    自动将test1、test2传进，通过不同方法传递不同参数
     public Object[][] methodDataTest(Method method) {
         Object[][] result = null;
         if (method.getName().equals("test1")) {

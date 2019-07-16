@@ -11,7 +11,6 @@
         <option value="$PROJECT_DIR$/Test/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter10/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter7/pom.xml" />
-        <option value="$PROJECT_DIR$/Chapter51/pom.xml" />
         <option value="$PROJECT_DIR$/Selenium/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter11/pom.xml" />
         <option value="$PROJECT_DIR$/RiskManagementSystem/pom.xml" />
@@ -20,6 +19,10 @@
         <option value="$PROJECT_DIR$/YSDZR/pom.xml" />
         <option value="$PROJECT_DIR$/autotest/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter5/pom.xml" />
+        <option value="$PROJECT_DIR$/Java/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaLearn2/pom.xml" />
+        <option value="$PROJECT_DIR$/Chapter13/pom.xml" />
+        <option value="$PROJECT_DIR$/Chapter13/pom.xml.bak" />
       </list>
     </option>
   </component>
