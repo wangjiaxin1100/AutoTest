@@ -37,7 +37,6 @@ public class LogInTest {
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
     public void loginTrue() throws IOException {
-
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",1);
         System.out.println(loginCase.toString());
@@ -46,12 +45,10 @@ public class LogInTest {
         //下边的代码为写完接口的测试代码
         String result = getResult(loginCase);
         //处理结果，就是判断返回结果是否符合预期
-        Assert.assertEquals(loginCase.getExpected(),result);
-
-
+        Assert.assertEquals(result,loginCase.getExpected());
     }
 
-    @Test(description = "用户登陆失败接口")
+    @Test(enabled = true,description = "用户登陆失败接口")
     public void loginFalse() throws IOException {
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",2);

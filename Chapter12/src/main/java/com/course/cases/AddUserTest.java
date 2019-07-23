@@ -1,4 +1,5 @@
 package com.course.cases;
+
 import com.course.config.TestConfig;
 import com.course.model.AddUserCase;
 import com.course.model.User;

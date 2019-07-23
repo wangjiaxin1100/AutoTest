@@ -28,7 +28,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
 
         return new ApiInfoBuilder().title("UserManager service API")
-                .contact(new Contact("dazhou", "", "42197393@qq.com"))
+                .contact(new Contact("jiaxin", "", "362334622@qq.com"))
                 .description("this is UserManager service API")
                 .version("1.0")
                 .build();

@@ -1,5 +1,7 @@
 server:
-   port: 8888
+   port: 8898
+
+#http://127.0.0.1:8898/swagger-ui.html 访问地址
 
 logging:
     path: logs

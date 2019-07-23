@@ -2,6 +2,9 @@ package com.course.model;
 import lombok.Data;
 
 @Data
+/*
+存储用户信息表
+ */
 public class User {
     private int id;
     private String userName;
@@ -16,7 +19,7 @@ public class User {
     public String toString(){
         //JSON格式的拼接，复写Tosting方法变成json格式
         return (
-                "id:"+id+","+
+                "｛id:"+id+","+
                         "userName:"+userName+","+
                         "password:"+password+","+
                         "age:"+age+","+
