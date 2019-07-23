@@ -10,6 +10,9 @@ package com.course;
 
 @EnableScheduling
 @SpringBootApplication
+/*
+入口应用程序
+ */
 public class Application {
 
     private  static ConfigurableApplicationContext context;

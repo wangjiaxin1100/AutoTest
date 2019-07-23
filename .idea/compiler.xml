@@ -15,7 +15,6 @@
         <module name="Chapter6" />
         <module name="Chapter7" />
         <module name="Chapter9" />
-        <module name="JavaLearn2" />
         <module name="RiskManagementSystem" />
         <module name="Selenium" />
         <module name="Test" />
@@ -27,7 +26,7 @@
       <module name="AutoTest3" target="1.5" />
       <module name="Chapter10" target="1.8" />
       <module name="Chapter11" target="1.5" />
-      <module name="Chapter12" target="1.5" />
+      <module name="Chapter12" target="1.8" />
       <module name="Chapter13" target="1.8" />
       <module name="Chapter21" target="1.8" />
       <module name="Chapter5" target="1.5" />
@@ -47,6 +46,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Chapter10" options="-parameters" />
       <module name="Chapter11" options="" />
+      <module name="Chapter13" options="-extdirs C:\Users\ab048766\.ssh\muke\AutoTest\Chapter13/lib" />
       <module name="Chapter21" options="-parameters" />
     </option>
   </component>

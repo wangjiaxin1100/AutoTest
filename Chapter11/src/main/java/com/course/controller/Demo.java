@@ -17,7 +17,7 @@ public class Demo {
 
     //首先获取一个执行sql语句的对象
     //预加载对象template
-
+//    启动机加载
     @Autowired
     private SqlSessionTemplate template;
 
