@@ -1,7 +1,7 @@
 server:
-   port: 8898
+   port: 8811
 
-#http://127.0.0.1:8898/swagger-ui.html 访问地址
+#http://127.0.0.1:8888/swagger-ui.html 访问地址
 
 logging:
     path: logs
@@ -13,9 +13,9 @@ spring:
           name: report
    datasource:
        driver-class-name: com.mysql.jdbc.Driver
-       url: jdbc:mysql://127.0.0.1:3306/course
+       url: jdbc:mysql://127.0.0.1:3306/course?serverTimezone=GMT
        username: root
-       password: anbang@1100
+       password: Anbang@1100
 
 mybatis:
     type-aliases-package: com.course.model

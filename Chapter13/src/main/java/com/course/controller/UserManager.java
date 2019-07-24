@@ -30,11 +30,13 @@ public class UserManager {
     @ApiOperation(value = "登陆接口",httpMethod = "POST")
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public Boolean login(HttpServletResponse response, @RequestBody User user){
+//        查询数据库中是否有用户
         int i  = template.selectOne("login",user);
         Cookie cookie = new Cookie("login","true");
         response.addCookie(cookie);
         log.info("查看到的结果是"+i);
         if(i==1){
+            log.info("登录用户是"+user.getUserName());
             return true;
         }
 
@@ -54,7 +56,7 @@ public class UserManager {
         }
         return false;
     }
-
+//  判断Cookies信息是否获取到方法
     private Boolean verifyCookies(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
         if(Objects.isNull(cookies)){
