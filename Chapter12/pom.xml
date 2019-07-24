@@ -2,13 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>Chapter</artifactId>
+        <artifactId>Chapter12</artifactId>
         <groupId>com.course.code</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+        <modelVersion>4.0.0</modelVersion>
     <build>
         <plugins>
             <plugin>
@@ -17,7 +14,7 @@
                 <version>2.7.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>./src/main/resource/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>./src/main/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -31,8 +28,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <artifactId>Chapter12</artifactId>
     <dependencies>
         <dependency>
             <groupId>commons-logging</groupId>
