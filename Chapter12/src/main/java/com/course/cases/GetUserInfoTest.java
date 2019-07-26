@@ -35,9 +35,7 @@ public class GetUserInfoTest {
         //下边为写完接口的代码
         JSONArray resultJson = getJsonResult(getUserInfoCase);
 
-        /**
-         * 下边三行可以先讲
-         */
+
         Thread.sleep(2000);
         User user = session.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);
         System.out.println("自己查库获取用户信息:"+user.toString());
